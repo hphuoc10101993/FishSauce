@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'p_e^8_#95_87_s3-s&8f_1xvmv2r&t8(t6+%7eekh3v*tvavez'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['maithuy.pythonanywhere.com', 'nguyenphuoc10101993.pythonanywhere.com']
 
 
 # Application definition
@@ -79,10 +79,11 @@ WSGI_APPLICATION = 'FishSauceProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'fishsaucedb',
-        'USER': 'root',
-        'PASSWORD': 'mysql',
+        'NAME': 'nguyenphuoc10101$fishsaucedb',
+        'USER': 'nguyenphuoc10101',
+        'PASSWORD': 'abc+=123',
         'OPTIONS': {'charset': 'utf8mb4'},
+        'HOST': 'nguyenphuoc10101993.mysql.pythonanywhere-services.com'
     }
 }
 
