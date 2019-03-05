@@ -23,3 +23,13 @@ class Company(models.Model):
     address = models.CharField(max_length=400)
     class Meta:
         db_table = "company"
+
+
+class Member(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    email = models.EmailField()
+    phone = models.CharField(max_length=15)
+
+    class Meta:
+        db_table = "member"
