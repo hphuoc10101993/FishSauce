@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'FishSauceApp.apps.FishsauceappConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [

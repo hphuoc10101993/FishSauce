@@ -1,7 +1,8 @@
 from django.contrib import admin
 
 from FishSauceApp.forms import FishSauceForm, CompanyForm
-from FishSauceApp.models import FishSauce, Company
+from FishSauceApp.models import FishSauce, Company, Member
+
 admin.site.site_header  = 'Fish Sauce MaiThuy'
 
 
@@ -17,3 +18,4 @@ class CompanyAdmin(admin.ModelAdmin):
 
 admin.site.register(FishSauce, FishSauceAdmin)
 admin.site.register(Company, CompanyAdmin)
+admin.site.register(Member)
